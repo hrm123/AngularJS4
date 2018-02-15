@@ -16,9 +16,10 @@
     </form>
   </div>
   <div class="col">
-    <p class="life-container">
-      I want to climb a mountain
-    </p>
+    <div class="life-container" *ngFor="let goal of goals" (click)="removeItem(i)">
+      <div class="life-container-item">{{goal}}</div>
+    </div>
   </div>
 </div>
+<div data-background-icon='&#xf146;'></div>
 

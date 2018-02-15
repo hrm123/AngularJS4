@@ -38,3 +38,8 @@ input.btn {
   font-weight:bold;
   cursor:pointer;
 }
+
+.life-container-item:after{
+  content: attr(data-remove-icon);
+  font-family: "FontAwesome";
+}
