@@ -3,7 +3,7 @@
     <p>Add a bucket list item</p>
   </div>
   <div class="col">
-    <p>You bucket list ({{itemCount}})</p>
+    <p>You bucket list ({{itemCount}})<i class="fa fa-american-sign-language-interpreting fa-5x" aria-hidden="true"> </i></p>
   </div>
 </div>
 <div class="container color-light" [@goals]="goals.length" >
@@ -17,9 +17,8 @@
   </div>
   <div class="col">
     <div class="life-container" *ngFor="let goal of goals" (click)="removeItem(i)">
-      <div class="life-container-item">{{goal}}</div>
+      <div class="life-container-item" data-remove-icon='&#xf057;'>{{goal}}</div>
     </div>
   </div>
 </div>
-<div data-background-icon='&#xf146;'></div>
 

@@ -39,7 +39,7 @@ input.btn {
   cursor:pointer;
 }
 
-.life-container-item:after{
+div:after{
   content: attr(data-remove-icon);
   font-family: "FontAwesome";
 }
